@@ -10,8 +10,40 @@ import org.junit.jupiter.api.Test;
 class Ejercicio3Test {
 
 	@Test
-	void test1() {
-		fail("Not yet implemented");
+	void esPrioritarioTest1() {
+		//Arrage
+		String codigoW=new String("WWW-77777-8");
+		boolean resultado;
+		
+		//Act
+		resultado=Ejercicio3.esPrioritario(codigoW);
+		
+		//Assert
+		assertTrue(resultado);
+	}
+	@Test
+	void esPrioritarioTest2() {
+		//Arrage
+		String codigoP=new String("PPP-66666-3");
+		boolean resultado;
+		
+		//Act
+		resultado=Ejercicio3.esPrioritario(codigoP);
+		
+		//Assert
+		assertTrue(resultado);
+	}
+	@Test
+	void esPrioritarioTest3() {
+		//Arrage
+		String codigoZ=new String("ZZZ-88888-4");
+		boolean resultado;
+		
+		//Act
+		resultado=Ejercicio3.esPrioritario(codigoZ);
+		
+		//Assert
+		assertFalse(resultado);
 	}
 
 	@Test

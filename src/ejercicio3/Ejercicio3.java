@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class Ejercicio3 {
 	static boolean esPrioritario(String codigo) {
-		codigo.charAt(0);
-		return true;
+		return codigo.charAt(0)=='P'||codigo.charAt(0)=='W';
 	}
 
 	static boolean verificar(String codigo) {
